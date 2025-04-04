@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+:root {
+  --navbar-height: 56px; /* Default Bootstrap navbar height */
+}
+
+/* Spacer to prevent content from hiding under navbar */
+.navbar-spacer {
+  height: var(--navbar-height);
+}
+
+/* Banner container styles */
+.banner-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Override Bootstrap navbar colors to match your design */
+.navbar {
+  background-color: #ffeedb !important;
+}
+
+.nav-link {
+  color: #e94e77 !important;
+}
+
+/* Adjust navbar height on smaller screens */
+@media (max-width: 768px) {
+  :root {
+    --navbar-height: 50px;
+  }
+  
+  .navbar-brand img {
+    height: 25px;
+  }
+}
